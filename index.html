@@ -8,23 +8,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>ProFlow</h1>
-        <nav>
-            <ul>
-                <li><a href="#dashboard">Dashboard</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#financials">Financials</a></li>
-                <li><a href="#tasks">Tasks</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="dashboard">
-            <h2>Dashboard</h2>
-            <!-- Dashboard content will go here -->
-        </section>
+    <div class="container">
+        <aside class="sidebar">
+            <header>
+                <h1>ProFlow</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="#dashboard">Dashboard</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#financials">Financials</a></li>
+                    <li><a href="#tasks">Tasks</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <section id="dashboard">
+                <h2>Dashboard</h2>
+                <!-- Dashboard content will go here -->
+            </section>
 
         <section id="projects">
             <h2>Projects</h2>
@@ -82,5 +84,6 @@
         const auth = firebase.auth();
     </script>
     <script src="script.js"></script>
+    </div>
 </body>
 </html>
