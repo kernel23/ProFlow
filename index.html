@@ -14,6 +14,7 @@
             <ul>
                 <li><a href="#dashboard">Dashboard</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#financials">Financials</a></li>
                 <li><a href="#tasks">Tasks</a></li>
             </ul>
         </nav>
@@ -27,14 +28,35 @@
 
         <section id="projects">
             <h2>Projects</h2>
+            <button id="create-project-btn">Create Project</button>
             <!-- Projects content will go here -->
         </section>
+
+        <section id="financials">
+            <h2>Financials</h2>
+            <!-- Financials content will go here -->
+        </section>
+
 
         <section id="tasks">
             <h2>Tasks</h2>
             <!-- Tasks content will go here -->
         </section>
     </main>
+
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Create Project</h2>
+            <form id="create-project-form">
+                <input type="text" id="project-name" placeholder="Project Name" required>
+                <textarea id="project-description" placeholder="Project Description" required></textarea>
+                <input type="date" id="project-deadline" required>
+                <input type="number" id="project-budget" placeholder="Budget" required>
+                <button type="submit">Save Project</button>
+            </form>
+        </div>
+    </div>
 
     <footer>
         <p>&copy; 2023 ProFlow</p>
