@@ -79,6 +79,15 @@ displayProjects();
 displayTasks();
 displayFinancials();
 
+const toggleSidebarBtn = document.getElementById('toggle-sidebar-btn');
+const sidebar = document.querySelector('.sidebar');
+const mainContent = document.querySelector('main');
+
+toggleSidebarBtn.addEventListener('click', () => {
+    sidebar.classList.toggle('minimized');
+    mainContent.classList.toggle('sidebar-minimized');
+});
+
 // Modal functionality
 const modal = document.getElementById('project-modal');
 const createProjectBtn = document.getElementById('create-project-btn');
